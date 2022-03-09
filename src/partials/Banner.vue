@@ -10,7 +10,7 @@
         👉
         <a
           class="hover:underline"
-          href="https://github.com/tal7aouy/VueBoard"
+          href="https://github.com/tal7aouy/vue-board"
           target="_blank"
           rel="noreferrer"
           >Star VueBoard on GitHub</a
