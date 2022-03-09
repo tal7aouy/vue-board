@@ -1,3 +1,7 @@
 <template>
-  <h3 class="text-gray-700 text-3xl font-medium">Blank Page</h3>
+  <!-- Breadcrumb -->
+  <Breadcrumb breadcrumb="Blank" />
 </template>
+<script lang="ts" setup>
+import Breadcrumb from '../partials/Breadcrumb.vue'
+</script>

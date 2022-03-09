@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h3 class="text-3xl font-medium text-gray-700">Modal</h3>
+    <!-- Breadcrumb -->
+    <Breadcrumb breadcrumb="Modal" />
     <button
       @click="open = true"
-      class="px-6 py-3 mt-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
+      class="px-6 py-2 mt-3 font-medium tracking-wide text-white bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none"
     >
       Open Modal
     </button>
@@ -59,7 +60,12 @@
           </div>
 
           <!--Body-->
-          <p>Modal content.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            asperiores sint necessitatibus aspernatur laborum quod ad quibusdam
+            voluptate aliquid molestiae! Cumque voluptatem sint eum, quibusdam
+            cupiditate vero quis. Praesentium, et!
+          </p>
 
           <!--Footer-->
           <div class="flex justify-end pt-2">
@@ -83,9 +89,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue'
+import Breadcrumb from '../partials/Breadcrumb.vue'
 
-const open = ref(false);
+const open = ref(false)
 </script>
 
 <style>

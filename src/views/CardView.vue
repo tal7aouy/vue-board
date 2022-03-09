@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h3 class="text-3xl font-semibold text-gray-700">Card</h3>
+    <!-- Breadcrumb -->
+    <Breadcrumb breadcrumb="Cards" />
     <div class="mt-4 mb-3">
       <h4 class="text-gray-700">Stacked</h4>
 
@@ -11,7 +12,9 @@
           alt="Sunset in the mountains"
         />
         <div class="px-6 py-4">
-          <div class="mb-2 text-xl font-bold text-gray-900">The Coldest Sunset</div>
+          <div class="mb-2 text-xl font-bold text-gray-900">
+            The Coldest Sunset
+          </div>
           <p class="text-base text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -84,3 +87,6 @@
     </div>
   </div>
 </template>
+<script lang="ts" setup>
+import Breadcrumb from '../partials/Breadcrumb.vue'
+</script>
