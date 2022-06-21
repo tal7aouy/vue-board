@@ -1,7 +1,7 @@
-<template>
+<template dir="rtl">
   <div
     v-show="open"
-    class="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60"
+    class="fixed bottom-0 left-0 w-full md:bottom-8 md:right-12 md:w-auto z-60"
   >
     <div
       class="
@@ -10,8 +10,8 @@
         p-3
         md:rounded
         shadow-lg
-        flex
-        justify-between
+        flex 
+        flex-row-reverse
       "
     >
       <div>

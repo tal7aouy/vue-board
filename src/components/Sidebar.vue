@@ -17,11 +17,11 @@
     <!-- End Backdrop -->
 
     <div
-      :class="isOpen ? 'translate-x-0 ease-out' : '-translate-x-full ease-in'"
+      :class="isOpen ? '-translate-x-0 ease-in' : 'translate-x-full ease-out'"
       class="
         fixed
         inset-y-0
-        left-0
+        right-0
         z-30
         w-64
         overflow-y-auto
@@ -49,12 +49,12 @@
             ></path>
           </svg>
 
-          <span class="mx-2 text-2xl font-semibold text-white">VueBoard</span>
+          <span class="mx-2 text-2xl font-semibold text-white">پنل ادمین</span>
         </div>
       </div>
 
       <nav class="mt-10">
-        <p class="pl-4 text-xs font-semibold mb-4 text-gray-400">GENERAL</p>
+        <p class="pl-4 text-xs font-semibold mb-4 text-gray-400">عمومی</p>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
           :class="[$route.name === 'Dashboard' ? activeClass : inactiveClass]"
@@ -75,10 +75,10 @@
             ></path>
           </svg>
 
-          <span class="mx-4">Dashboard</span>
+          <span class="mx-4">داشبورد</span>
         </router-link>
         <p class="pl-4 my-2 text-xs font-semibold mb-4 text-gray-400">
-          Examples
+          مثال ها
         </p>
 
         <router-link
@@ -110,7 +110,7 @@
             />
           </svg>
 
-          <span class="mx-4">UI Elements</span>
+          <span class="mx-4">طراحی ها</span>
         </router-link>
 
         <router-link
@@ -138,7 +138,7 @@
             />
           </svg>
 
-          <span class="mx-4">Tables</span>
+          <span class="mx-4">جدول ها</span>
         </router-link>
 
         <router-link
@@ -157,7 +157,7 @@
             />
           </svg>
 
-          <span class="mx-4">Forms</span>
+          <span class="mx-4">فرم ها</span>
         </router-link>
 
         <router-link
@@ -179,7 +179,7 @@
             />
           </svg>
 
-          <span class="mx-4">Cards</span>
+          <span class="mx-4">حساب های اعتباری</span>
         </router-link>
 
         <router-link
@@ -204,7 +204,7 @@
             />
           </svg>
 
-          <span class="mx-4">Modal</span>
+          <span class="mx-4">مدال</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
@@ -221,7 +221,7 @@
             <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
           </svg>
 
-          <span class="mx-4">Charts</span>
+          <span class="mx-4">چارت</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
@@ -234,14 +234,14 @@
             />
           </svg>
 
-          <span class="mx-4">Blank</span>
+          <span class="mx-4">صفحه خالی</span>
         </router-link>
-        <p class="pl-4 text-xs my-2 font-semibold mb-4 text-gray-400">About</p>
+        <p class="pl-4 text-xs my-2 font-semibold mb-4 text-gray-400">درباره ما</p>
         <a
           target="_blank"
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
           :class="[$route.name === 'Blank' ? activeClass : inactiveClass]"
-          href="https://github.com/tal7aouy"
+          href="https://github.com/mohammadkze"
         >
           <svg
             class="w-5 h-5 fill-current"
