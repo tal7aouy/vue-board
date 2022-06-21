@@ -2,7 +2,7 @@
   <div>
     <Breadcrumb breadcrumb="" />
     <!--Banner get you to github repo-->
-    <Banner />
+    <!-- <Banner /> -->
     <div class="mt-4">
       <div class="flex flex-wrap -mx-6">
         <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
@@ -45,7 +45,7 @@
 
             <div class="mx-5">
               <h4 class="text-2xl font-semibold text-gray-700">8,282</h4>
-              <div class="text-gray-500">New Users</div>
+              <div class="text-gray-500">کاربر جدید</div>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
 
             <div class="mx-5">
               <h4 class="text-2xl font-semibold text-gray-700">200,521</h4>
-              <div class="text-gray-500">Total Orders</div>
+              <div class="text-gray-500">کل سفارشات</div>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@
 
             <div class="mx-5">
               <h4 class="text-2xl font-semibold text-gray-700">215,542</h4>
-              <div class="text-gray-500">Available Products</div>
+              <div class="text-gray-500">محصولات</div>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
                     bg-gray-50
                   "
                 >
-                  Name
+                  نام
                 </th>
                 <th
                   class="
@@ -166,7 +166,7 @@
                     bg-gray-50
                   "
                 >
-                  Title
+                  عنوان
                 </th>
                 <th
                   class="
@@ -182,7 +182,7 @@
                     bg-gray-50
                   "
                 >
-                  Status
+                  وضعیت
                 </th>
                 <th
                   class="
@@ -198,7 +198,7 @@
                     bg-gray-50
                   "
                 >
-                  Role
+                  نقش
                 </th>
                 <th class="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
               </tr>
@@ -212,7 +212,7 @@
                   <div class="flex items-center">
                     <div class="flex-shrink-0 w-10 h-10">
                       <img
-                        class="w-10 h-10 rounded-full"
+                        class="w-10 h-10 rounded-full -mr-2"
                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                       />
@@ -333,7 +333,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import Banner from "../partials/Banner.vue";
+// import Banner from "../partials/Banner.vue";
 import Breadcrumb from "../partials/Breadcrumb.vue";
 interface User {
   name: string;
@@ -345,12 +345,12 @@ interface User {
 }
 
 const testUser: User = {
-  name: "John Doe",
-  email: "john@example.com",
-  title: "Software Engineer",
-  title2: "Web dev",
-  status: "Active",
-  role: "Owner",
+  name: "محمد خزائی",
+  email: "mohammad@gmail.com",
+  title: "مهندس کامپیوتر",
+  title2: "فرانت اند",
+  status: "فعال",
+  role: "صاحب",
 };
 
 const users = ref<User[]>([...Array(10).keys()].map(() => testUser));

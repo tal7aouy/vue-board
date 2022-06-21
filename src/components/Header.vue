@@ -1,4 +1,4 @@
-<template>
+<template dir="rtl">
   <header
     class="
       flex
@@ -98,7 +98,7 @@
             v-show="notificationOpen"
             class="
               absolute
-              right-0
+              left-0
               mt-2
               w-80
               bg-white
@@ -244,10 +244,11 @@
           leave-to-class="scale-95 opacity-0"
         >
           <div
+            dir="rtl"
             v-show="dropdownOpen"
             class="
               absolute
-              right-0
+              left-0
               z-20
               w-48
               py-1
