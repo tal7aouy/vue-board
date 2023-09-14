@@ -413,5 +413,5 @@
 <script setup lang="ts">
 import { useTableData } from '../hooks/useTableData'
 const { simpleTableData, paginatedTableData, wideTableData } = useTableData()
-import Breadcrumb from '../partials/Breadcrumb.vue'
+import Breadcrumb from '../partials/AppBreadcrumb.vue'
 </script>

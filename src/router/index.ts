@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Dashboard from "../views/Dashboard.vue";
-import Forms from "../views/Forms.vue";
-import Tables from "../views/Tables.vue";
+import Dashboard from "../views/AppDashboard.vue";
+import Forms from "../views/AppForms.vue";
+import Tables from "../views/AppTables.vue";
 import UIElements from "../views/UIElements.vue";
-import Login from "../views/Login.vue";
-import Modal from "../views/Modal.vue";
+import Login from "../views/AppLogin.vue";
+import Modal from "../views/AppModal.vue";
 import Chart from "../views/ChartView.vue";
 import Card from "../views/CardView.vue";
 import Blank from "../views/BlankView.vue";
